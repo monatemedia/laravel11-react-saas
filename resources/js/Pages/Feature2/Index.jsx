@@ -45,7 +45,7 @@ export default function Index({ feature, answer }) {
                         id="number2"
                         type="text"
                         name="number2"
-                        value={data.number1}
+                        value={data.number2}
                         className="mt-1 block w-full"
                         onChange={(e) => setData("number2", e.target.value)}
                     />
