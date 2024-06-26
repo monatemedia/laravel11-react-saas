@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Feature1Controller;
+use App\Http\Controllers\Feature2Controller;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -21,9 +22,9 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/feature1', [Feature1Controller::class, 'calculate'])
         ->name('feature1.calculate');
 
-    Route::get('/feature2', [Feature1Controller::class, 'index'])
+    Route::get('/feature2', [Feature2Controller::class, 'index'])
         ->name('feature2.index');
-    Route::post('/feature2', [Feature1Controller::class, 'calculate'])
+    Route::post('/feature2', [Feature2Controller::class, 'calculate'])
         ->name('feature2.calculate');
 });
 

@@ -15,7 +15,7 @@ export default function Feature({ feature, answer, children }) {
                 </h2>
             }
         >
-            <Head title="Feature 1" />
+            <Head title={feature.name} />
 
             <div className="py-12">
                 <div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
@@ -46,7 +46,7 @@ export default function Feature({ feature, answer, children }) {
                                         You don't have enough credits for this
                                         feature. Go{""}
                                         <Link href="/" className="underline">
-                                            Buy more credits
+                                            buy more credits
                                         </Link>
                                     </div>
                                 </div>
